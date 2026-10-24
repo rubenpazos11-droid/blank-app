@@ -1,0 +1,64 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer"><title>Integración del rediseño en Bolt · Limpiezas Coslada</title><style>body{margin:0;background:#f5f7f4;color:#263e43;font:16px/1.7 Arial,sans-serif}main{max-width:920px;margin:auto;padding:40px 22px 80px}h1,h2{color:#263e43;line-height:1.2}h1{font-size:36px}a{color:#005561}button{font:600 15px Arial;cursor:pointer;border:0;border-radius:7px;background:#006c7a;color:white;padding:15px 20px;margin:7px 10px 7px 0}button:disabled{opacity:.5;cursor:default}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d5dfda;border-radius:12px;padding:25px;font:14px/1.75 ui-monospace,monospace}li{margin:10px 0}.notice{background:#e0ede9;padding:18px 22px;border-radius:9px}.small{font-size:13px;color:#52666a}#status{min-height:50px}button:focus-visible,a:focus-visible{outline:3px solid #005561;outline-offset:4px}</style></head><body data-file="codigo-72546aaaa128.lcpack" data-sha="72546aaaa128aa090fe58327837b8c3059a6b9f2fbf2c43bf9fdeb131c42f767"><main><a href="../">← Volver a la vista previa</a><h1>Integra la nueva web en tu proyecto de Bolt.</h1><p class="notice"><strong>Equilibrio entre neutros, aguamarina y azul turquesa.</strong> Titulares pizarra, fondos suaves y un único panel de marca dan variedad sin saturar. El turquesa #006C7A destaca los botones y detalles; el formulario conserva el blanco. El paquete y el prompt ya incluyen esta versión.</p><p class="notice"><strong>Conserva el proyecto actual.</strong> Se integran los archivos y conexiones; no hace falta borrar toda la web ni la base de datos.</p><ol><li>Descarga el ZIP fuente con este enlace protegido.</li><li>Abre tu proyecto original de Bolt y guarda una versión recuperable.</li><li>Adjunta el ZIP a la conversación de Bolt y pega el prompt de abajo.</li><li>Revisa el resultado y las pruebas antes de publicar en el dominio.</li></ol><button id="download">Descargar proyecto para Bolt</button><button id="copy">Copiar prompt completo</button><p id="status" role="status" aria-live="polite"></p><p class="small">El paquete no incluye archivos .env, claves de cuentas ni datos de clientes. La descarga se prepara en tu navegador. La integración con Google necesita la cuenta del titular y su verificación.</p><h2>Prompt para Bolt</h2><pre id="prompt">Trabaja SOBRE MI PROYECTO ACTUAL de Limpiezas Coslada en Bolt. Integra el ZIP fuente actualizado que adjunto, sin borrar el proyecto ni recrearlo con otra plantilla. Si falta el ZIP, solicítalo; no reconstruyas la web copiando el HTML de la vista previa.
+
+Referencia visual aprobada: https://rubenpazos11-droid.github.io/blank-app/
+La referencia es una demostración autocontenida; la producción debe usar el proyecto React del paquete, con páginas reales y recursos locales.
+
+1. INSPECCIÓN Y RESPALDO
+Compara el estado actual con el paquete antes de sustituir archivos. Guarda una versión recuperable del código y del despliegue. Conserva Supabase, sus datos, variables y secretos, historial de migraciones, dominio y alojamiento. Una copia de Bolt NO duplica la base de datos. Conserva la URL y la clave pública anon de Supabase en sus variables VITE_SUPABASE_URL y VITE_SUPABASE_ANON_KEY, sin mostrarlas en el chat. Las claves privadas de Resend y SUPABASE_SERVICE_ROLE_KEY solo van en los secretos del backend; nunca en código frontend, variables VITE_, ZIP o chat. Lee README.md, INSTRUCCIONES_PARA_BOLT.md y SEO_PUBLICACION.md del paquete.
+
+2. MISMA TECNOLOGÍA
+El proyecto exportado usa React 18.3, TypeScript, Vite 5.4, Tailwind 3.4, Lucide y Supabase 2.57. Mantén su arquitectura y las actualizaciones compatibles que ya existan; no lo migres a Next, Python u otro backend. Fusiona los archivos dentro de la raíz que ya ejecuta Bolt, evitando otra aplicación anidada en project/ o bolt-site/. Conserva las variables del proyecto actual. Comprueba Node: las pruebas del paquete funcionan en Node 20 y 22 sin flags experimentales.
+
+3. DISEÑO Y CONTACTO
+Aplica los componentes y CSS del ZIP. Paleta aprobada: equilibrio entre neutros, aguamarina y azul turquesa. Conserva #006C7A para la marca y los CTA, con hover #005561. Usa pizarra #263E43 en titulares y texto principal, #52666A en texto secundario y neutro cálido #F5F7F4 como base. Portada #F5F7F4 con halo aguamarina sutil #DCECEA solo junto a la fotografía; ventajas #EAF0ED con texto oscuro e iconos turquesa; servicios #F0F4F1 con todas las tarjetas blancas iguales, sin rellenos de colores diferentes. Empresa es el único bloque de marca intenso #006C7A: un panel contenido con esquinas de 28 px y margen exterior neutro, no una franja de lado a lado. Proceso #EDF2EF con discos suaves; preguntas #F7F8F5 con texto oscuro y tarjetas de acordeón blancas o casi blancas; presupuesto en degradado #E0EDE9 a #F0F4EF y formulario blanco; pie #28464B. Concentra el turquesa en botones, énfasis e iconos y mantén los titulares principales en pizarra. Evita las bandas saturadas repetidas y las grandes superficies blancas planas. Mantén la imagen del logo, fotografías, tipografía, textos, backend y SEO aprobados, incluida la indicación de imagen ilustrativa creada con IA. Conserva las anclas antiguas #contacto y #nosotros.
+Datos confirmados: Limpiezas Coslada S.L.; WhatsApp +34 646 434 422; limpiezascoslada@gmail.com. Solo WhatsApp y email, sin llamadas ni enlaces tel:. Los botones preparan una solicitud con servicio, localidad, tamaño y frecuencia. No actives chat web, bot, servicios de pago ni migres el número.
+
+4. FORMULARIO SIN ROMPER EL ANTERIOR
+Empieza en VITE_CONTACT_MODE=demo. No envíes correos ni escribas en la base real durante la revisión. Integra la nueva función submit-enquiry sin sobrescribir send-contact-email original. Comprueba qué migraciones están aplicadas; no sustituyas su historia. La expansión compatible añade campos y funciones sin cerrar el formulario antiguo. El cierre de permisos está separado en supabase/operations y es manual, posterior al cambio verificado. No lo ejecutes automáticamente. Conserva registros, prueba estados enviado/pendiente y reintentos sin duplicados. Verifica el remitente autorizado en Resend y la configuración segura antes de preparar la activación real. Revisa la configuración JWT de la Edge Function y la compatibilidad con el tipo de clave pública existente; no desactives su verificación de forma indiscriminada. Configura CONTACT_ALLOWED_ORIGINS con los orígenes exactos de las revisiones que se vayan a usar, sin comodines. Comprueba OPTIONS y POST contra el gateway en un entorno aislado con datos ficticios; la recepción real será una prueba controlada durante el lanzamiento. Solo después de comprobar consumidores se podrá retirar el endpoint antiguo.
+
+5. SEO REAL
+Publica HTML prerenderizado de la portada y de /servicios/comunidades/, /servicios/oficinas/, /servicios/suelos/ y /servicios/cristales/. El build produce archivos estáticos en dist, sin servidor SSR permanente. Mantén contenido sin JavaScript, H1 y metadatos propios, canonical HTTPS de https://limpiezascoslada.com, sitemap XML y robots reales, imágenes sociales, schema coherente y BreadcrumbList. Devuelve 404 real para direcciones inexistentes; no reescribas todo a la portada con 200.
+Mantén VITE_PUBLICATION_READY=false en revisión. Tras aprobar el lanzamiento habrá que ponerlo en true y recompilar; los previews deben seguir noindex. No inventes reseñas, estrellas, antigüedad, dirección, NIF, precios, horarios o zonas. Completa la información legal real antes de publicarla como definitiva. Prepara los pasos de Google Business Profile y Search Console para el titular; no crees fichas duplicadas ni inventes códigos de verificación. No prometas posiciones en Google.
+
+6. PRUEBAS Y ENTREGA
+Ejecuta npm ci, npm run typecheck, npm run lint, npm test, npm run test:seo y npm run build. Comprueba ordenador/móvil, navegación, imágenes, WhatsApp/email y formulario demo. Revisa HTML sin JavaScript sobre build/preview, no sobre Vite dev. Confirma el proveedor real y su configuración; la web actual se entrega por Netlify. Respeta las reglas de páginas/404 y conserva el dominio.
+Completa la integración y las pruebas de revisión, sin quedarte solo en un plan. Presenta los cambios, resultados y requisitos pendientes. NO publiques producción, cambies DNS, apliques operaciones destructivas ni mandes mensajes reales automáticamente: déjalo listo para aprobar el lanzamiento. Después de publicar habrá que ejecutar npm run check:live-seo -- https://limpiezascoslada.com, verificar cinco páginas 200, recursos correctos, indexación permitida, HTTPS/host único y una ruta inventada con 404, y enviar el sitemap en Search Console.
+</pre><h2>SEO después de publicar</h2><ol><li>Comprobar o reclamar la ficha existente de Google Business Profile.</li><li>Verificar limpiezascoslada.com en Google Search Console con la cuenta del titular.</li><li>Enviar sitemap e inspeccionar las cinco páginas comerciales.</li><li>Medir impresiones, búsquedas y solicitudes reales; aportar fotografías y reseñas auténticas.</li></ol><p>La vista previa permanece fuera de la indexación. Las mejoras SEO deben publicarse en el dominio principal para que Google pueda evaluarlas.</p></main><script>
+(() => {
+ let key;
+ const download = document.querySelector('#download');
+ const status = document.querySelector('#status');
+ let objectUrl;
+ const encodedFile = document.body.dataset.file;
+ const expected = document.body.dataset.sha;
+ const filename = 'Limpiezas-Coslada-Bolt-actualizado.zip';
+ const updateAccess = () => { key = new URLSearchParams(location.hash.slice(1)).get('k'); download.disabled = !key; status.textContent = key ? 'Pulsa descargar para preparar tu ZIP.' : 'Para descargar el código, abre el enlace protegido enviado en el chat. El prompt se puede consultar y copiar aquí.'; };
+ updateAccess(); window.addEventListener('hashchange', updateAccess);
+ document.querySelector('#copy').addEventListener('click', async () => {
+  const text = document.querySelector('#prompt').textContent;
+  try { await navigator.clipboard.writeText(text); document.querySelector('#copy').textContent = 'Prompt copiado'; }
+  catch { const range=document.createRange();range.selectNodeContents(document.querySelector('#prompt'));const selection=getSelection();selection.removeAllRanges();selection.addRange(range);document.querySelector('#copy').textContent='Texto seleccionado: copiar'; }
+ });
+ download.addEventListener('click', async () => {
+  download.disabled=true;status.textContent='Preparando el ZIP…';
+  try {
+   const response=await fetch('./'+encodedFile);
+   if(!response.ok)throw new Error('download');
+   const packed=new Uint8Array(await response.arrayBuffer());
+   if(new TextDecoder().decode(packed.slice(0,5))!=='LCPK1')throw new Error('format');
+   let value=key.replaceAll('-','+').replaceAll('_','/');value+='='.repeat((4-value.length%4)%4);
+   const bytes=Uint8Array.from(atob(value), char=>char.charCodeAt(0));
+   const imported=await crypto.subtle.importKey('raw',bytes,'AES-GCM',false,['decrypt']);
+   const plaintext=await crypto.subtle.decrypt({name:'AES-GCM',iv:packed.slice(5,17)},imported,packed.slice(17));
+   const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',plaintext)),byte=>byte.toString(16).padStart(2,'0')).join('');
+   if(digest!==expected)throw new Error('integrity');
+   if(objectUrl)URL.revokeObjectURL(objectUrl);
+   objectUrl=URL.createObjectURL(new Blob([plaintext],{type:'application/zip'}));
+   let link=document.querySelector('#ready-download');if(!link){link=document.createElement('a');link.id='ready-download';link.style.display='block';status.after(link);}
+   link.href=objectUrl;link.download=filename;link.textContent='Descargar el ZIP ya preparado';link.click();
+   status.textContent='ZIP preparado. Adjunta ese archivo a tu proyecto actual de Bolt y pega el prompt.';
+  } catch { status.textContent='No se ha podido abrir el paquete. Usa el enlace protegido completo del chat y ábrelo en tu navegador.'; }
+  finally { download.disabled=false; }
+ });
+})();
+</script></body></html>
