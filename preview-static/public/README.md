@@ -1,9 +1,13 @@
-# El Machaca — vista de demostración
+# El Machaca — demostración navegable
 
-Capturas reales de la interfaz desarrollada, con datos ficticios. Se publica esta vista separada para revisar el diseño; no contiene bases de datos, cookies, claves ni información personal real.
+Esta rama contiene una vista pública separada para poder revisar la interfaz sin acceder al servidor privado.
+
+La demo reutiliza las pantallas reales de la aplicación Next.js. Un adaptador de navegador sustituye la API por datos ficticios en memoria. Se pueden recorrer clientes, trabajos, revisión, agenda, asistente y ejemplos de documentos. Todo se reinicia al recargar. No contiene SQLite, cookies, claves, información personal real ni servicios de pago.
+
+`index.html`, `styles.css` y `bundle.js` forman la demo estática. Esta rama no sustituye al proyecto Next.js/SQLite de desarrollo ni constituye un despliegue de producción.
+
+## Capturas reales
 
 ![Vista de escritorio](assets/desktop.png)
 
 ![Vista móvil](assets/mobile.png)
-
-La aplicación Next.js con SQLite continúa en el proyecto de desarrollo. Esta rama de vista previa no es un despliegue de producción.
